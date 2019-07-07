@@ -133,7 +133,7 @@ export default class App extends Component {
 		const { hasilbmr, hasilbmi, keteranganbmi } = this.state;
 
 		return (
-			<View style={{ flex: 1, flexDirection: 'column'}}>
+			<View style={{ flex: 1, flexDirection: 'column' }}>
 
 				{/* Kembali */}
 				<TouchableOpacity style={styles.btnBack} onPress={() => this.setState({ hasilbmr: '0', hasilbmi: '0' })}>
@@ -166,7 +166,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-				<View style={{ flex: 1, flexDirection: 'column', padding: 20 }}>
+				<View style={{ flex: 1, flexDirection: 'column', padding: 20,  backgroundColor: '#fff' }}>
 					{this.state.hasilbmi == '0' ? this.viewInput() : this.viewHasil()}
 				</View>
 			</ScrollView>
@@ -180,19 +180,20 @@ const styles = StyleSheet.create({
 		padding: 20,
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderWidth: 1,
-		borderColor: '#ccc',
-		backgroundColor: '#ccc',
-		elevation: 0.8,
+		borderWidth: 2,
+		borderColor: '#3ec6f9',
+		backgroundColor: '#eee',
+		// elevation: 0.8,
 	},
 	btnDefault: {
+		backgroundColor: '#fff',
 		borderRadius: 13,
 		padding: 20,
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderWidth: 1,
-		borderColor: '#ccc',
-		elevation: 0.8,
+		borderWidth: 2,
+		borderColor: '#eee',
+		// elevation: 0.8,
 	},
 	btnBack: {
 		alignSelf:'flex-start',
